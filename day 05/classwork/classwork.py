@@ -1,0 +1,1 @@
+#we did not have any classwork, as the lesson was primarily focused on theoretical concepts

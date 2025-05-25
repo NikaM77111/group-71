@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ტაქსის შეკვეთა</title>
+</head>
+<body>
+
+    <h2>ტაქსის შეკვეთა</h2>
+
+    <form action="#" method="POST">
+        <!-- სახელისა და გვარის ველი -->
+        <label for="full-name">სახელი და გვარი:</label><br>
+        <input type="text" id="full-name" name="full-name" required><br><br>
+
+        <!-- მობილურის ნომრის ველი -->
+        <label for="phone-number">მობილური ნომერი:</label><br>
+        <input type="tel" id="phone-number" name="phone-number" required><br><br>
+
+        <!-- მისამართის ველი -->
+        <label for="destination">მისამართი, სადაც გსურთ წასვლა:</label><br>
+        <input type="text" id="destination" name="destination" required><br><br>
+
+        <!-- დრო - საათი -->
+        <label for="time">რა დროს გსურთ ტაქსი?</label><br>
+        <input type="time" id="time" name="time" required><br><br>
+
+        <!-- შეფასების (reviews) ველი -->
+        <label for="review">შეფასება:</label><br>
+        <textarea id="review" name="review" rows="5" cols="55"></textarea><br><br>
+
+        <!-- გამოგზავნის ღილაკი -->
+        <button type="submit">შეკვეთა</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+h1, h2, .paragraphs p {
+  text-align: center;
+}
+
+#main-heading {
+  border: 2px solid blue;
+  color: purple;
+}
+
+#second-heading {
+  border: 4px double red;
+}
+
+.red-border {
+  border: 2px solid red;
+  width: 150px;
+  height: 150px;
+}
+
+.purple-border {
+  border: 4px double purple;
+  width: 200px;
+  height: 200px;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.green-text {
+  color: green;
+}

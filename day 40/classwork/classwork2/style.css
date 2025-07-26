@@ -1,0 +1,36 @@
+.red-img {
+    width: 200px;
+    height: 200px;
+}
+
+.purple-img {
+    width: 150px;
+    height: 200px;
+}
+
+.blue {
+    color: blue;
+}
+
+.orange {
+    color: orange;
+}
+
+.center {
+    text-align: center;
+}
+
+#title1, #title2 {
+    text-align: center;
+    color: purple;
+}
+
+#btn1 {
+    background-color: green;
+    color: white;
+}
+
+#btn2 {
+    background-color: orange;
+    color: white;
+}

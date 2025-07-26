@@ -12,6 +12,6 @@ my_list = [
 ]
 
 # გამოვიტანოთ მხოლოდ Boolean ტიპები:
-for item in my_list:
-    if type(item) == bool:
-        print(item)
+for i in my_list:
+    if type(i) == bool:
+        print(i)

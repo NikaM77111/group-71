@@ -1,0 +1,17 @@
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: brown;
+}
+
+.box {
+    width: 100px;
+    height: 90px;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    borde;
+}
+

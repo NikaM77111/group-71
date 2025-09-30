@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+    background: darkblue;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: green;
+    margin-bottom: 30px;
+}
+
+
+.movies-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.movie-box {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px;
+    padding: 40px 20px;
+    width: 180;
+    font-size: 18px;
+}

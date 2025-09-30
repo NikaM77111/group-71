@@ -1,0 +1,13 @@
+input {
+    padding: 8x;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+input:hover {
+    background-color: lightblue;
+}
+
+input:focus {
+    font-size: 18px;
+}

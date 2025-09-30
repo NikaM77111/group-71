@@ -1,0 +1,14 @@
+.photo-box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+  justify-content: center;  /* ჰორიზონტალურად ცენტრი */
+  align-items: center;      /* ვერტიკალურად ცენტრი */
+    gap: 10px;
+    background-color: #ddd;
+}
+
+.photo {
+    width: 100px;
+    height: auto;
+}

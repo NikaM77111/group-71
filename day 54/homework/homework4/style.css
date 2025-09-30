@@ -1,0 +1,17 @@
+#btn1 {
+  border: 2px solid red;
+  padding: 3px;
+  margin: 10px;
+}
+
+#btn2 {
+  border: 3px dashed green;
+  padding: 5px;
+  margin: 10px;
+}
+
+#btn3 {
+  border: 4px dotted blue;
+  padding: 8px;
+  margin: 10px;
+}

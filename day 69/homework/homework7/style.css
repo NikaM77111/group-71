@@ -1,0 +1,43 @@
+.wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.frame {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.top {
+  width: 100%;
+  height: 20px;
+  top: -20px;
+}
+
+.right {
+  width: 20px;
+  height: 100%;
+  right: -20px;
+}
+
+.bottom {
+  width: 100%;
+  height: 20px;
+  bottom: -20px;
+}
+
+.left {
+  width: 20px;
+  height: 100%;
+  left: -20px;
+}

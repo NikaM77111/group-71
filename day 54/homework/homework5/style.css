@@ -1,0 +1,15 @@
+#center-paragraph {
+  text-align: center;
+  margin-top: 55px;
+}
+
+.img1 {
+  border: 3px double red;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.img2 {
+  border: 3px double red;
+  padding: 20px;
+}

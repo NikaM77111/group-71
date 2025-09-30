@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+}
+
+.child {
+  flex-grow: 0; /* ყველა ელემენტი არ იზრდება */
+  padding: 20px;
+  background-color: lightcoral;
+  margin: 5px;
+}
+
+.child:nth-child(2) {
+  flex-grow: 1; /* მხოლოდ მეორე ელემენტი იზრდება */
+}

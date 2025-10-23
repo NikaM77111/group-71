@@ -1,11 +1,13 @@
 .image-container {
   position: relative;
+   top: 50%;
+  left: 50%;
 }
 
 h2 {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   background-color: rgba(0, 0, 0, 0.5); /* გამჭვირვალე ბარი */
   color: white;
   padding: 10px;

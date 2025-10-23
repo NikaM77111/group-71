@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+header {
+position: fixed;
+top: 0; left: 0; width: 100;
+background-color: beige;
+padding: 10px;
+text-align: center;
+}
+
+nav a{
+    color:rgb(5, 0, 0);
+    text-decoration: none;
+}
+
+aside {
+    background: #7d67a7;
+    position: sticky;
+}
+
+.cars {
+    display: flex;
+}
+

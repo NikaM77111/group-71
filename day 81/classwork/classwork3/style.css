@@ -1,0 +1,7 @@
+.photo {
+    width: 200px;
+}
+
+.photo:active {
+    transform: rotate(-90deg) scale(2) translate(-150px, 180px);
+}

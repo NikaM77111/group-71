@@ -1,0 +1,22 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+
+    /* Align items inside each grid cell */
+    justify-items: center; /* Center horizontally */
+    align-items: center;   /* Center vertically */
+
+    /* Move the entire grid */
+    justify-content: center; /* Align the grid container horizontally */
+    align-content: center;   /* Align the grid container vertically */
+}
+
+.item {
+    background-color: lightseagreen;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

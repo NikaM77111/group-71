@@ -1,0 +1,12 @@
+/* .box2 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: transform 3s, background 3s;
+}
+
+.box2:hover {
+  transform: translateX(-100px); /* მარცხნივ გადადის */
+  background: purple; /* ფერი იცვლება იისფერზე */
+} 
+ */

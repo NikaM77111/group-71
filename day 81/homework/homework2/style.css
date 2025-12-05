@@ -1,0 +1,21 @@
+/* მთავარი კონტეინერი */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* div-ი - თავდაპირველად ზომით და ფერით */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    transition: transform 0.3s ease, scale 0.3s ease;
+}
+
+/* active კლასში ტრანსფორმაცია */
+.container:hover .box {
+    transform: rotate(-190deg); /* საათის ისრის საწინააღმდეგო მიმართულებით 190 გრადუსი */
+    transform: scale(2);         /* ზომის გაორმაგება */
+}

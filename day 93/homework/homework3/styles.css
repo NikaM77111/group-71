@@ -1,0 +1,14 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    grid-template-rows: 1fr 1fr; /* 2 rows */
+    gap: 10px;
+}
+
+.item {
+    background-color: rgb(29, 19, 139);
+    height: 150px; /* Square height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

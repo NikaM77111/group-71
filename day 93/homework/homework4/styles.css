@@ -1,0 +1,13 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px 2fr 3fr; /* Different column widths */
+    gap: 10px;
+}
+
+.item {
+    background-color: lightcoral;
+    height: 100px; /* Div height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

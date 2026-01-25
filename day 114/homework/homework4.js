@@ -10,3 +10,10 @@ while (true) {
         console.log("wrong passsword, try again");
     }
 }
+
+
+
+
+
+const adminPass = "admin123"
+const userPass 

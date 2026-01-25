@@ -1,4 +1,4 @@
-let numbers = [3, 7, 5, 8, 9, 4];
+let numbers = [1, 3, 5, 7, 6, 8];
 
 for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] % 2 === 0) {   // ლუწი რიცხვის შემოწმება

@@ -1,0 +1,1 @@
+#1) გადახედეთ რესურსს: https://www.w3schools.com/python/python_class_methods.asp

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="colorDiv" style="width: 200px; height: 200px; background-color: white;">
+    <p>Hover over me!</p>
+</div>
+
+<script>
+    const div = document.getElementById('colorDiv');
+
+    div.addEventListener('mouseover', function() {
+        div.style.backgroundColor = 'blue'; // მაუსი div-ზე - ფერი ლურჯი ხდება
+    });
+
+    div.addEventListener('mouseout', function() {
+        div.style.backgroundColor = 'white'; // მაუსი div-იდან - ფერი უკან თეთრი ხდება
+    });
+</script>
+
+</body>
+</html>

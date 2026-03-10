@@ -5,19 +5,18 @@ class Employee:
         self.salary = salary
 
     def get_salary(self):
-        print(f"{self.name}'s salary is: ${self.salary}")
+        print(f"{self.name}'s salary is: {self.salary}")
 
 
 #შვილი Manager კლასი:
 class Manager(Employee):
-    def __init__(self, name, salary):
-        super().__init__(name, salary)
-
     def bonus_salary(self):
-        return self.salary * 1.2
+        bonus = self.salary * 0.20
+        total = self.salary + bonus 
+        print(f"{self.name} salary with bonus is {total}")
 
 
-#გამოყენება:
+#test:
 e = Employee("John", 50000)
 e.get_salary()  # John’s salary is: $50000
 

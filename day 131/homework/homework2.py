@@ -1,0 +1,1 @@
+#2) გაიარეთ Data hiding & class and static methods და აიღეთ Python Intermediate სერთიფიკატი

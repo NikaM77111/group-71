@@ -1,0 +1,27 @@
+°<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="changeBackgroundButton">Change Background</button>
+<img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn2nmWoa-66Yo5xylQwIiAxtvMrK2pB2l4CA&s" alt="Placeholder Image">
+
+<script>
+    document.getElementById('changeBackgroundButton').addEventListener('click', function() {
+        document.body.style.backgroundColor = 'lightblue';
+    });
+
+    const image = document.getElementById('image');
+    image.addEventListener('mouseover', function() {
+        image.style.width = '300px'; // ფოტოს სიგანე გაიზრდება
+    });
+
+    image.addEventListener('mouseout', function() {
+        image.style.width = '150px'; // ფოტოს სიგანე დაიბრუნებს პირვანდელ ზომას
+    });
+</script>
+</body>
+</html>

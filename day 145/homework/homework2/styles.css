@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+h1 {
+  font-family: "Parisienne", cursive;
+}
+
+body {
+    background-color:  rgb(91, 38, 70);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.container {
+    background: #e6e6e6;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    height: auto;
+    min-height: 200px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 8px;
+    width: 200px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #d3d3d3;
+    cursor: pointer;
+
+    margin-left: 10px;
+    background-color: #ff6b81;
+    color: white
+}
+
+button:hover {
+    background: #bfbfbf;
+    background-color: #460107;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task {
+    background: #dcdcdc;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.task button {
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: none;
+}
+
+
+.editbutton {
+    font-size: 18px;
+    padding: 10px 18px;
+    min-width: 80px;
+    height: 40px;
+    background-color: rgb(41, 76, 146);
+    color: rgb(22, 16, 16);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.editbutton:hover {
+    background-color: #0b1c71;
+}

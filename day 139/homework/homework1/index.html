@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="form-container">
+    <div class="image-container">
+        <img src="https://cdng.europosters.eu/pod_public/750/214194.jpg" alt="Advertisement Image">
+        <p>Bring Your Music Along</p>
+        <p><span>try Unlimited</span></p>
+        <p class="price">$9.99 / Month</p>
+      </div>
+
+    <form id="registrationForm">
+      <h2>Registration Form</h2>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="ex: Lindsey Wilson" required>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" placeholder="Your email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Your password" required>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+
+    <div class="terms">
+      <input type="checkbox" id="terms" required>
+      <label for="terms">By signing up, you agree to the <a href="#">Play Term of Service</a></label>
+    </div>
+
+      <button type="submit">Register</button>
+  </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

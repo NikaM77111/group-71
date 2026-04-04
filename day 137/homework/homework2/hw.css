@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    text-align: center;
+    background: blue;
+}
+
+h1{
+    font-size: 40px;
+    color: white;
+    margin-top: 30px;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+img{
+    width: 600px;
+    height: 850px;
+}
+
+button{
+    font-size: 18px;
+    color: rgb(255, 0, 0);
+    background:  rgb(22, 149, 22);
+    padding: 12px;
+}
+
+button:hover{
+    background-color: black;
+}

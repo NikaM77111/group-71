@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-image">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3a/d0/5b/3ad05b4f-7ba4-34f9-d109-352010c0fc94/859789286972_cover.jpg/600x600bf-60.jpg" alt="Music" />
+                <p>Bring Your Music Along</p>
+                <p>Try Unlimited</p>
+                <p class="price">$9.99 / Month</p>
+            </div>
+            <div class="form-content">
+                <h2>Registration Form</h2>
+                <form id="registration-form" onsubmit="return validateForm()">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="ex: Lindsey Wilson" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+
+                    <div class="terms">
+                        <input type="checkbox" id="terms" name="terms">
+                        <label for="terms">By signing up, you agree to the <a href="#">Play Term of Service</a></label>
+                    </div>
+
+                    <button type="submit" class="register-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

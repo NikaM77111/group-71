@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music App</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>Music App</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-    <h1>Music App</h1>
 
-    <div class="input-box">
-        <input type="text" id="taskInput" placeholder="Enter music and artist name">
-        <button id="addBtn">Add</button>
-    </div>
+<div class="app-container">
 
-    <div id="taskList" class="task-list">
-    </div>
+<header class="header">
+    <h1> Music App</h1>
+    <p class="subtitle">Add, edit, play your favorite songs</p>
+</header>
+
+<section class="form-section">
+    <div class="form-box">
+    <input id="title" type="text" placeholder="Enter song title">
+    <input id="artist" type="text" placeholder="Enter artist name">
+    <input id="audio" type="text" placeholder="Paste audio URL (mp3)">
+    <button id="addBtn">Add Music</button>
+</div>
+</section>
+
+<section class="library-section">
+<h2>Your Library</h2>
+<div id="musicList" class="music-grid"></div>
+</section>
 </div>
 
 <script src="script.js"></script>

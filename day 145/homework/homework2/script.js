@@ -1,44 +1,61 @@
-const input = document.getElementById("taskInput");
-const button = document.getElementById("addBtn");
-const list = document.getElementById("taskList");
+let songs = [
+{
+    title: "Passionfruit",
+    artist: "Drake",
+    audio: "hthttps://youtu.be/EgfsXTOn_pIhttps://www.youtube.com/watch?v=EgfsXTOn_pI&pp=ygUScGFzc2lvbmZydWl0IGRyYWtlhttps://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3tps://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+},
+{
+    title: "Fancy",
+    artist: "Drake",
+    audio: "https://www.soundhelix.com/https://youtu.be/XXr8fnKffq8examples/mp3/SoundHelix-Song-2.mp3"
+},
+{
+    title: "Luther",
+    artist: "Kendrick Lamar",
+    audio: "https://www.soundhelix.com/examhttps://youtu.be/HfWLgELllZsles/mp3/SoundHelix-Song-3.mp3"
+}
+];
 
-button.addEventListener("click", function (e) {
-    e.preventDefault(); 
+let titleInput = document.getElementById("title");
+let artistInput = document.getElementById("artist");
+let audioInput = document.getElementById("audio");
+let addBtn = document.getElementById("addBtn");
+let musicList = document.getElementById("musicList");
 
-    let text = input.value;
+function show() {
+    musicList.innerHTML = "";
 
-    if (text === "") {
-        return; 
-    }
+    for (let i = 0; i < songs.length; i++) {
+        let li = document.createElement("li");
 
-    let textspan = document.createElement("span");
-    textspan.innerText = text;
 
-    let item = document.createElement("div");
-    item.innerText = text;
+        li.textContent = songs[i].title + " - " + songs[i].artist;
 
-    let removeBtn = document.createElement("button");
-    removeBtn.innerText = "Remove";
+        let audio = document.createElement("audio");
+        audio.src = songs[i].audio;
+        audio.controls = true;
 
-    removeBtn.addEventListener("click", function () {
-        list.removeChild(item);
-    });
+        li.appendChild(document.createElement("br"));
+        li.appendChild(audio);
 
-    let editBtn = document.createElement("button"); 
+        musicList.appendChild(li);
+}
+}
 
-    editBtn.addEventListener("click", function () {
-    let newText = prompt("enter your edited task: ");
+show();
 
-    if (newText !== "" && newText !== " ") { 
-        item.firstChild.textContent = newText;
-        editBtn.innerText = "edit";
-    }
-});
+addBtn.addEventListener("click", function() {
+    let newSong = {
+        title: titleInput.value,
+        artist: artistInput.value,
+        audio: audioInput.value
+    };
 
-    editBtn.className = "editbutton"
+    songs.push(newSong);
 
-    item.appendChild(editBtn);
-    item.appendChild(removeBtn);
-    list.appendChild(item);
-    input.value = ""; 
+show();
+
+    titleInput.value = "";
+    artistInput.value = "";
+    audioInput.value = "";
 });

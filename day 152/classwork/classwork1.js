@@ -37,4 +37,4 @@ const user1 = new BankAccount("Nika", "Machavariani");
 user1.deposit(100);
 user1.withdraw(40);
 
-console.log(user1.Checkbalance);
+console.log(user1.checkbalance);

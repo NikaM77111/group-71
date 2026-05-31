@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<div class="left">
+<div class="front-card">
+  <img src="images/card-logo.svg" class="logo">
+  <h2 id="numberText">0000 0000 0000 0000</h2>
+    <div class="card-bottom">
+      <p id="nameText">JANE APPLESEED</p>
+      <p>
+      <span id="monthText">00</span>/
+      <span id="yearText">00</span>
+    </p>
+    </div>
+    </div>
+  <div class="back-card">
+    <p id="cvcText">000</p>
+  </div>
+  </div>
+  <div class="right">
+    <form id="form">
+    <label>CARDHOLDER NAME</label>
+    <input type="text" id="nameInput" placeholder="e.g Jane Appleseed">
+    <label>CARD NUMBER</label>
+    <input type="text" id="numberInput" placeholder="e.g 1234 5678 9123 0000">
+    <div class="row">
+    <div>
+      <label>EXP. DATE(MM/YY)</label>
+      <div class="date">
+        <input type="text" id="monthInput" placeholder="MM">
+        <input type="text" id="yearInput" placeholder="YY">
+      </div>
+      </div>
+      <div>
+      <label>CVC</label>
+      <input type="text" id="cvcInput" placeholder="e.g 123">
+  </div>
+  </div>
+  <button>Confirm</button>
+</form>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

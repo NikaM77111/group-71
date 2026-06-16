@@ -12,7 +12,7 @@ Promise.reject("Error 5")
 Promise.allSettled(promises)
 .then(results => {
     const rejected = results.filter(
-        result => result.status === "rejected"
+        result => result === "rejected"
     );
 
     console.log(rejected);

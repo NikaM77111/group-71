@@ -1,22 +1,21 @@
-//1) შექენი 4 Promise (ზოგი resolve, ზოგი reject). დააბრუნე მარტო პირველი დარესოლვებული
+// 1) შექმენით თქვენი ხელოვნური Promise და გადაეცით callback ფუნქცია resolve და reject პარამეტრით, 
+// ფუნქციის შიგნით გამოიყენეთ setTimeout - ი იმისთვის რომ შეაყოვნოთ კოდი, ასევე შექმენით success 
+// ცვლადი რისი დახმარებითაც თქვენ მიიღებთ გადაწყვეტილებას რომელი სიტუაცია გაუშვათ resolve თუ reject, 
+// შემდგომ ფუნქციის გარეთ დაელოდეთ promise - ის შესრულებას .then და .catch ფუნქციის დახმარებით
 
-const p1 = new Promise((resolve, reject) => {
-    setTimeout(() => reject("Error 1"), 1000);
+const myPromise = new Promise((resolve, reject) => {
+    const succes = true
+
+    setTimeout(() => {
+        if(succes) {
+            resolve("registered succesfully")
+        } else {
+            reject("error")
+        }
+    }, 2000)
 });
 
-const p2 = new Promise((resolve, reject) => {
-    setTimeout(() => resolve("Success 2"), 2000);
-});
-
-const p3 = new Promise((resolve, reject) => {
-    setTimeout(() => resolve("Success 3"), 500);
-});
-
-const p4 = new Promise((resolve, reject) => {
-    setTimeout(() => reject("Error 4"), 1500);
-});
-
-Promise.any([p1, p2, p3, p4])
+myPromise
     .then((message) => {
         console.log(message)
     })
